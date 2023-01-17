@@ -1,0 +1,110 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "youtube music",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "how do I use this skill",
+            "what can I do with this skill"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayIntent",
+          "slots": [
+            {
+              "name": "song",
+              "type": "AMAZON.MusicRecording"
+            }
+          ],
+          "samples": [
+            "play {song}",
+            "start playing {song}",
+            "play music {song}"
+          ]
+        },
+        {
+          "name": "PauseIntent",
+          "slots": [],
+          "samples": [
+            "pause",
+            "pause music"
+          ]
+        },
+        {
+          "name": "ResumeIntent",
+          "slots": [],
+          "samples": [
+            "resume",
+            "resume music",
+            "continue playing"
+          ]
+        },
+        {
+          "name": "NextIntent",
+          "slots": [],
+          "samples": [
+            "next",
+            "next song",
+            "skip"
+          ]
+        },
+        {
+          "name": "PreviousIntent",
+          "slots": [],
+          "samples": [
+            "previous",
+            "previoussong",
+            "go back"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Shape of You"
+              }
+            },
+            {
+              "name": {
+                "value": "Thinking Out Loud"
+              }
+            },
+            {
+              "name": {
+                "value": "Uptown Funk"
+              }
+            },
+            {
+              "name": {
+                "value": "Despacito"
+              }
+            }
+          ],
+          "name": "AMAZON.MusicRecording"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}

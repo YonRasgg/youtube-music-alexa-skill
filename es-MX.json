@@ -1,0 +1,110 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "youtube music",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "cómo uso esta habilidad",
+            "qué puedo hacer con esta habilidad"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayIntent",
+          "slots": [
+            {
+              "name": "cancion",
+              "type": "AMAZON.MusicRecording"
+            }
+          ],
+          "samples": [
+            "reproducir {cancion}",
+            "comenzar a reproducir {cancion}",
+            "reproducir música {cancion}"
+          ]
+        },
+        {
+          "name": "PauseIntent",
+          "slots": [],
+          "samples": [
+            "pausa",
+            "pausar música"
+          ]
+        },
+        {
+          "name": "ResumeIntent",
+          "slots": [],
+          "samples": [
+            "reanudar",
+            "reanudar música",
+            "continuar reproduciendo"
+          ]
+        },
+        {
+          "name": "NextIntent",
+          "slots": [],
+          "samples": [
+            "siguiente",
+            "siguiente canción",
+            "saltar"
+          ]
+        },
+        {
+          "name": "PreviousIntent",
+          "slots": [],
+          "samples": [
+            "anterior",
+            "canción anterior",
+            "volver atrás"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Shape of You"
+              }
+            },
+            {
+              "name": {
+                "value": "Thinking Out Loud"
+              }
+            },
+            {
+              "name": {
+                "value": "Uptown Funk"
+              }
+            },
+            {
+              "name": {
+                "value": "Despacito"
+              }
+            }
+          ],
+          "name": "AMAZON.MusicRecording"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}
